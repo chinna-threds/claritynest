@@ -1,0 +1,102 @@
+<!--
+Free-Etsy-Landing-Page.html
+
+How to use (short):
+1) Open this file in a text editor (Notepad / VS Code).
+2) Replace each PRODUCT_* image URL and PRODUCT_*_URL with your Etsy image URLs and product page links.
+   - If you don't have remote image URLs, upload images to a free image host (e.g., Imgur) or GitHub repo and paste the raw image URL.
+3) Save the file and host it on GitHub Pages (create a repo named username.github.io and push this file as index.html) OR simply open locally to preview.
+
+Why this is effectively "completely free":
+- GitHub Pages hosting of a static HTML file is free permanently for public repositories. No forced ads, no monthly fees.
+- You can also host locally or on other free hosts (Netlify/Vercel free tiers exist but terms may change).
+- A custom domain costs money, but you may use the free username.github.io domain forever.
+
+Features of this single-file site:
+- Responsive, mobile-first layout (cards grid)
+- Simple hero section with store name and short intro
+- Product cards with image, title, price, and a button linking to Etsy listing
+- Social / Etsy shop link in footer
+- No external JavaScript or CSS frameworks
+
+---
+-- Replace the sample placeholders below with your actual images and Etsy links.
+-- Keep the file name index.html when hosting (GitHub Pages looks for index.html).
+-- Enjoy!
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Etsy Shop — Landing Page</title>
+  <style>
+    :root{--maxw:1100px;--accent:#0b7285;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;margin:0;color:#111}
+    .wrap{max-width:var(--maxw);margin:30px auto;padding:20px}
+    header{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center}
+    h1{margin:0;font-size:clamp(20px,4vw,34px)}
+    p.lead{margin:0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:22px}
+    .card{border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column;min-height:320px}
+    .card img{width:100%;height:220px;object-fit:cover;display:block}
+    .card .body{padding:12px;flex:1;display:flex;flex-direction:column}
+    .title{font-weight:600;margin:0 0 6px 0;font-size:15px}
+    .price{color:var(--accent);font-weight:700;margin-top:auto}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;margin-top:10px;background:linear-gradient(0deg,var(--accent),#1695a1);color:white}
+
+    footer{margin-top:28px;padding-top:18px;border-top:1px solid #f0f0f0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* small adjustments */
+    @media (max-width:420px){.card img{height:180px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Your Shop Name — Handcrafted & Unique</h1>
+      <p class="lead">Welcome! Tap any product to open the Etsy listing and buy securely. (This is a free hosted landing page.)</p>
+    </header>
+
+    <main>
+      <div class="grid">
+        <!-- Product card example: replace IMAGE_SRC and PRODUCT_URL and text -->
+        <article class="card">
+          <a href="PRODUCT_1_URL" target="_blank" rel="noopener noreferrer">
+            <img src="PRODUCT_1_IMAGE" alt="Product 1">
+          </a>
+          <div class="body">
+            <h3 class="title">Product 1 Title</h3>
+            <div class="price">AED 0.00</div>
+            <a class="btn" href="PRODUCT_1_URL" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="PRODUCT_2_URL" target="_blank" rel="noopener noreferrer">
+            <img src="PRODUCT_2_IMAGE" alt="Product 2">
+          </a>
+          <div class="body">
+            <h3 class="title">Product 2 Title</h3>
+            <div class="price">AED 0.00</div>
+            <a class="btn" href="PRODUCT_2_URL" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+          </div>
+        </article>
+
+        <!-- Duplicate/Copy the article block for more products -->
+
+      </div>
+
+      <!-- Add more sections if needed -->
+    </main>
+
+    <footer>
+      <div>Find the full shop on Etsy: <a href="YOUR_ETSYPAGE_URL" target="_blank" rel="noopener noreferrer">Your Etsy Shop</a></div>
+      <div style="margin-top:8px">Made with ❤️ — Free single-file site (host on GitHub Pages)</div>
+    </footer>
+  </div>
+</body>
+</html>
