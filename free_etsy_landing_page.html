@@ -1,36 +1,9 @@
-<!--
-Free-Etsy-Landing-Page.html
-
-How to use (short):
-1) Open this file in a text editor (Notepad / VS Code).
-2) Replace each PRODUCT_* image URL and PRODUCT_*_URL with your Etsy image URLs and product page links.
-   - If you don't have remote image URLs, upload images to a free image host (e.g., Imgur) or GitHub repo and paste the raw image URL.
-3) Save the file and host it on GitHub Pages (create a repo named username.github.io and push this file as index.html) OR simply open locally to preview.
-
-Why this is effectively "completely free":
-- GitHub Pages hosting of a static HTML file is free permanently for public repositories. No forced ads, no monthly fees.
-- You can also host locally or on other free hosts (Netlify/Vercel free tiers exist but terms may change).
-- A custom domain costs money, but you may use the free username.github.io domain forever.
-
-Features of this single-file site:
-- Responsive, mobile-first layout (cards grid)
-- Simple hero section with store name and short intro
-- Product cards with image, title, price, and a button linking to Etsy listing
-- Social / Etsy shop link in footer
-- No external JavaScript or CSS frameworks
-
----
--- Replace the sample placeholders below with your actual images and Etsy links.
--- Keep the file name index.html when hosting (GitHub Pages looks for index.html).
--- Enjoy!
--->
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Etsy Shop — Landing Page</title>
+  <title>ClarityNestAE — Etsy Shop</title>
   <style>
     :root{--maxw:1100px;--accent:#0b7285;--muted:#666}
     *{box-sizing:border-box}
@@ -49,52 +22,67 @@ Features of this single-file site:
     .btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;margin-top:10px;background:linear-gradient(0deg,var(--accent),#1695a1);color:white}
 
     footer{margin-top:28px;padding-top:18px;border-top:1px solid #f0f0f0;text-align:center;color:var(--muted);font-size:14px}
-
-    /* small adjustments */
     @media (max-width:420px){.card img{height:180px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Your Shop Name — Handcrafted & Unique</h1>
-      <p class="lead">Welcome! Tap any product to open the Etsy listing and buy securely. (This is a free hosted landing page.)</p>
+      <h1>ClarityNestAE — Handcrafted & Unique</h1>
+      <p class="lead">Welcome! Tap any product to open the Etsy listing and buy securely.</p>
     </header>
 
     <main>
       <div class="grid">
-        <!-- Product card example: replace IMAGE_SRC and PRODUCT_URL and text -->
         <article class="card">
-          <a href="PRODUCT_1_URL" target="_blank" rel="noopener noreferrer">
-            <img src="PRODUCT_1_IMAGE" alt="Product 1">
+          <a href="https://www.etsy.com/listing/4403461329/cozy-autumn-girl-illustration-t-shirt?click_key=2422e9e9c7f0f396e4c5fbc03887ef95734111d7%3A4403461329&click_sum=0e1b6b4d&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_1" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.etsystatic.com/61280237/r/il/fac52a/7355997502/il_600x600.7355997502_arfx.jpg" alt="Cozy Autumn Girl Illustration T-Shirt">
           </a>
           <div class="body">
-            <h3 class="title">Product 1 Title</h3>
+            <h3 class="title">Cozy Autumn Girl Illustration T-Shirt</h3>
             <div class="price">AED 0.00</div>
-            <a class="btn" href="PRODUCT_1_URL" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+            <a class="btn" href="https://www.etsy.com/listing/4403461329/cozy-autumn-girl-illustration-t-shirt?click_key=2422e9e9c7f0f396e4c5fbc03887ef95734111d7%3A4403461329&click_sum=0e1b6b4d&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_1" target="_blank" rel="noopener noreferrer">View on Etsy</a>
           </div>
         </article>
 
         <article class="card">
-          <a href="PRODUCT_2_URL" target="_blank" rel="noopener noreferrer">
-            <img src="PRODUCT_2_IMAGE" alt="Product 2">
+          <a href="https://www.etsy.com/listing/4402259407/green-heart-tee-minimal-heart-graphic-t?click_key=cb101440c663357a1ab9a6f8ac1011b4a395dc13%3A4402259407&click_sum=c0ef707e&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_4" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.etsystatic.com/61280237/r/il/b6ecf2/7379469806/il_600x600.7379469806_29y3.jpg" alt="Green Heart Tee | Minimal Heart Graphic T-Shirt">
           </a>
           <div class="body">
-            <h3 class="title">Product 2 Title</h3>
+            <h3 class="title">Green Heart Tee | Minimal Heart Graphic T-Shirt</h3>
             <div class="price">AED 0.00</div>
-            <a class="btn" href="PRODUCT_2_URL" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+            <a class="btn" href="https://www.etsy.com/listing/4402259407/green-heart-tee-minimal-heart-graphic-t?click_key=cb101440c663357a1ab9a6f8ac1011b4a395dc13%3A4402259407&click_sum=c0ef707e&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_4" target="_blank" rel="noopener noreferrer">View on Etsy</a>
           </div>
         </article>
 
-        <!-- Duplicate/Copy the article block for more products -->
+        <article class="card">
+          <a href="https://www.etsy.com/listing/4398501334/halloween-unisex-heavy-cotton-tee-spooky?click_key=d64c6268cd2fb4fce47008c6c3720a3417402ca6%3A4398501334&click_sum=ef45a3c3&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_9" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.etsystatic.com/61280237/r/il/90fb93/7387307634/il_600x600.7387307634_fjvc.jpg" alt="Halloween Unisex Heavy Cotton Tee, Spooky Tee">
+          </a>
+          <div class="body">
+            <h3 class="title">Halloween Unisex Heavy Cotton Tee, Spooky Tee</h3>
+            <div class="price">AED 0.00</div>
+            <a class="btn" href="https://www.etsy.com/listing/4398501334/halloween-unisex-heavy-cotton-tee-spooky?click_key=d64c6268cd2fb4fce47008c6c3720a3417402ca6%3A4398501334&click_sum=ef45a3c3&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_9" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="https://www.etsy.com/listing/4398481018/wholeness-unisex-heavy-cotton-tee?click_key=1f34c7fb2c77fcf274068f48dd29ec82b586f03f%3A4398481018&click_sum=c3b02458&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_12" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.etsystatic.com/61280237/r/il/703528/7356142256/il_600x600.7356142256_5o25.jpg" alt="Wholeness Unisex Heavy Cotton Tee">
+          </a>
+          <div class="body">
+            <h3 class="title">Wholeness Unisex Heavy Cotton Tee</h3>
+            <div class="price">AED 0.00</div>
+            <a class="btn" href="https://www.etsy.com/listing/4398481018/wholeness-unisex-heavy-cotton-tee?click_key=1f34c7fb2c77fcf274068f48dd29ec82b586f03f%3A4398481018&click_sum=c3b02458&sr_prefetch=0&pf_from=shop_home&ref=shop_home_active_12" target="_blank" rel="noopener noreferrer">View on Etsy</a>
+          </div>
+        </article>
 
       </div>
-
-      <!-- Add more sections if needed -->
     </main>
 
     <footer>
-      <div>Find the full shop on Etsy: <a href="YOUR_ETSYPAGE_URL" target="_blank" rel="noopener noreferrer">Your Etsy Shop</a></div>
+      <div>Find the full shop on Etsy: <a href="https://claritynestae.etsy.com" target="_blank" rel="noopener noreferrer">ClarityNestAE</a></div>
       <div style="margin-top:8px">Made with ❤️ — Free single-file site (host on GitHub Pages)</div>
     </footer>
   </div>
